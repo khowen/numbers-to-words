@@ -1,0 +1,90 @@
+:focus {
+  outline: none;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+  background: #1D976C;
+  background: -webkit-linear-gradient(right, #1D976C, #93F9B9);
+  background: -o-linear-gradient(right, #1D976C, #93F9B9);
+  background: linear-gradient(to left, #1D976C, #93F9B9);
+
+}
+
+#container {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  height: 100%;
+}
+
+#inner-wrapper {
+  margin-top: 50%;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0 auto;
+}
+
+p {
+  margin-top: 0;
+}
+
+button {
+  border: .15em solid #fff;
+  background-color: transparent;
+  color: #fff;
+  /*padding: 1%;*/
+  font-size: 1em;
+  vertical-align: top;
+  padding: .4em;
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+}
+
+button:hover {
+  background-color: #fff;
+  color: #1D976C;
+  -webkit-transition: all ease .5s;
+  transition: all ease .5s;
+}
+
+input {
+  /*padding: 1.5%;*/
+  padding: .45em;
+  background-color: transparent;
+  border: .15em solid #fff;
+  color: #fff;
+  font-size: 1.2em;
+  vertical-align: top;
+  width: 100%;
+  margin-bottom: 2%;
+}
+
+::-webkit-input-placeholder { color:rgba(255,255,255,.5); }
+::-moz-placeholder { color:rgba(255,255,255,.5);}
+:-ms-input-placeholder { color:rgba(255,255,255,.5);}
+input:-moz-placeholder { color:rgba(255,255,255,.5);}
+
+
+#output {
+  text-transform: capitalize;
+  margin-top: 5%;
+  font-size: 1.2em;
+  line-height: 1.5;
+}
+
+/* Media Queries */
+@media (min-width: 578px) {
+  input {
+    width: auto;
+  }
+  button {
+    width: auto;
+    display: inline-block;
+  }
+}
+
