@@ -119,10 +119,9 @@ function numToWords(n) {
             if (numByThrees[0].length === 2) {
                 if(numByThreesSplit[0] === '1') {
                     str += tens[parseInt(numByThreesSplit[1])] + ' ' + extras[x] + ' ';
-                } else if (numByThreesSplit[0] === '2') {
-                    str += ty[parseInt(numByThreesSplit[0] - 2)] + ' ' + d + ' ' + extras[x] + ' ';
                 } else {
-                    str += ty[parseInt(numByThreesSplit[1]) - 2] + ' ' + d + ' ' + extras[x] + ' ';
+                    console.log(1);
+                    str += ty[parseInt(numByThreesSplit[0]) -2] + ' ' + d + ' ' + extras[x] + ' ';
                 }
             } else if (numByThrees[0].length === 1) {
                 str += digits[parseInt(numByThreesSplit[0])] + ' ' + extras[x] + ' ';
