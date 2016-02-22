@@ -19,8 +19,6 @@ function numToWords(n) {
     } else {
         numByThrees = n.split(',');
     }
-    //var numByThrees = n;
-    console.log('Num By Threes',numByThrees);
 
     //ensure n is within range of 0 - 999,999,999
     if(num < 0 || num > 999999999 || n === '') {
@@ -121,13 +119,10 @@ function numToWords(n) {
             if (numByThrees[0].length === 2) {
                 if(numByThreesSplit[0] === '1') {
                     str += tens[parseInt(numByThreesSplit[1])] + ' ' + extras[x] + ' ';
-                    console.log('Not 3 tens',str);
                 } else if (numByThreesSplit[0] === '2') {
-                    console.log('Not 3 tys',str);
                     str += ty[parseInt(numByThreesSplit[0] - 2)] + ' ' + d + ' ' + extras[x] + ' ';
                 } else {
                     str += ty[parseInt(numByThreesSplit[1]) - 2] + ' ' + d + ' ' + extras[x] + ' ';
-                    console.log('Not 3 tys Other:',str);
                 }
             } else if (numByThrees[0].length === 1) {
                 str += digits[parseInt(numByThreesSplit[0])] + ' ' + extras[x] + ' ';
@@ -144,7 +139,7 @@ function numToWords(n) {
         }
     }//end of else
 
-    return num + ': ' + str;
+    return str;
 }//end of numToWords()
 
 //get user input

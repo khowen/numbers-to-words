@@ -4,28 +4,18 @@
 
 body {
   font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
   color: #fff;
   background: #1D976C;
   background: -webkit-linear-gradient(right, #1D976C, #93F9B9);
   background: -o-linear-gradient(right, #1D976C, #93F9B9);
   background: linear-gradient(to left, #1D976C, #93F9B9);
-
-}
-
-#container {
-  width: 50%;
-  margin: 0 auto;
-  text-align: center;
-  height: 100%;
-}
-
-#inner-wrapper {
-  margin-top: 50%;
 }
 
 h1 {
-  font-size: 2em;
-  margin: 0 auto;
+  font-size: 2.5em;
+  margin: 0 auto 2% auto;
+  font-weight: 300;
 }
 
 p {
@@ -36,7 +26,6 @@ button {
   border: .15em solid #fff;
   background-color: transparent;
   color: #fff;
-  /*padding: 1%;*/
   font-size: 1em;
   vertical-align: top;
   padding: .4em;
@@ -53,7 +42,6 @@ button:hover {
 }
 
 input {
-  /*padding: 1.5%;*/
   padding: .45em;
   background-color: transparent;
   border: .15em solid #fff;
@@ -69,6 +57,16 @@ input {
 :-ms-input-placeholder { color:rgba(255,255,255,.5);}
 input:-moz-placeholder { color:rgba(255,255,255,.5);}
 
+#container {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  height: 100%;
+}
+
+#inner-wrapper {
+  margin-top: 50%;
+}
 
 #output {
   text-transform: capitalize;
